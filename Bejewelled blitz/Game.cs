@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Timers;
 
-namespace Bejewelled
+namespace Bejeweled
 {
     class Game
     {
