@@ -7,12 +7,12 @@ namespace Bejeweled
     class Score
     {
         //One line data: (name, score, time)
-        class Sor
+        class Line
         {
             string mnev;
             int mert;
             int mtime;
-            public Sor(string nev, int ert, int time)
+            public Line(string nev, int ert, int time)
             {
                 mnev = nev;
                 mert = ert;
@@ -34,7 +34,7 @@ namespace Bejeweled
                 set { mtime = value; }
             }
         }
-        List<Sor> highscore;
+        List<Line> highscore;
         
         // Reading the content of the score.txt
         public Score()
@@ -42,7 +42,7 @@ namespace Bejeweled
 
             StreamReader sr = new StreamReader(File.Open("score.txt", FileMode.OpenOrCreate));
 
-            highscore = new List<Sor>();
+            highscore = new List<Line>();
             while (!sr.EndOfStream)
             {
                 string temp = sr.ReadLine();
@@ -51,7 +51,7 @@ namespace Bejeweled
                 string tnev = darabok[0];
                 int tert = Convert.ToInt32(darabok[1]);
                 int ttime = Convert.ToInt32(darabok[2]);
-                highscore.Add(new Sor(tnev, tert, ttime));
+                highscore.Add(new Line(tnev, tert, ttime));
             }
             sr.Close();
         }
@@ -75,17 +75,17 @@ namespace Bejeweled
                 // Because its an arranged list we place it in the correct place
                 if(highscore[i].Time >= time && highscore[i].Ert <= ert)
                 {
-                    highscore.Add(new Sor("", 0, 0));
+                    highscore.Add(new Line("", 0, 0));
                     for(int j = highscore.Count-1; j > i; j--)
                     {
                         highscore[j] = highscore[j - 1];
                     }
-                    highscore[i] = new Sor(nev, ert, time);
+                    highscore[i] = new Line(nev, ert, time);
                     return;
                 }
             }
             // If insertion wasn't necessary we put it in the end
-            highscore.Add(new Sor(nev, ert, time));
+            highscore.Add(new Line(nev, ert, time));
         }
         // Writing the score board on console
         public void DrawHighscore()
