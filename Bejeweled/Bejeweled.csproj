@@ -7,8 +7,8 @@
     <ProjectGuid>{301F0017-0CE1-43EA-BFDF-B773531EEE28}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Bejewelled_blitz</RootNamespace>
-    <AssemblyName>Bejewelled blitz</AssemblyName>
+    <RootNamespace>Bejeweled</RootNamespace>
+    <AssemblyName>Bejeweled</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
