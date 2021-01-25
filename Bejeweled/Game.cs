@@ -126,7 +126,7 @@ namespace Bejeweled
             }
             s += "\nName: " + mname + "\t\t\t Controls:\r\n";
             s += "Score: " + score + "\t\t\t Move: arrows\r\n";
-            s += "Time left: " + (mtime-curtime) + "\t\t Swap/Select: space\r\n";
+            s += "Time left: " + (mtime-curtime) + "\t\t\t Swap/Select: space\r\n";
 
             return s;
         }
