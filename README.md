@@ -30,7 +30,7 @@ Swap neighbour symbols so 2 of the same kind is next to each other
 
 ## License
 
-All Rights Reserved.
+MIT
 
 Copyright (c) 2021 Neczpál Ábel.
 
@@ -43,4 +43,4 @@ however, please contact me before doing so.
 
 Neczpál Ábel - [neczpal@gmail.com](mailto:neczpal@gmail.com)
 
-Project Link: [https://github.com/neczpal/bejeweled](https://github.com/neczpal/bejeweled)
+Project Link - [https://github.com/neczpal/bejeweled](https://github.com/neczpal/bejeweled)
